@@ -1,0 +1,35 @@
+<nav class="navbar navbar-expand-sm navbar-light bg-light">
+    <div class="container">
+        <a class="navbar-brand" href="#">Spotiflux</a>
+        <button
+            class="navbar-toggler d-lg-none"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapsibleNavId"
+            aria-controls="collapsibleNavId"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+        >
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" href="{{ path('app_web_album_index') }}"> Album</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="{{ path('app_web_artist_index') }}"> Artist</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="{{ path('app_web_track_index') }}"> Track</a>
+                </li>
+                {# {% if is_granted('ROLE_ADMIN') %}
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ path('app_home_hello', {'name': 'John'}) }}">Bonjour {{ app.user.firstname }}</a>
+                </li> 
+                {% endif %} #}
+            </ul>
+        </div>
+    </div>
+</nav>
+
